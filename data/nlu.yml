@@ -1,0 +1,231 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: searchRestaurant
+  examples: |
+    - I am hungry
+    - I am starving
+    - Can you recommend somthing to eat?
+    - Can you suggest some restaurants?
+    - I want to find a restaurant
+    - Can you recommend a [Mexican](cuisine) food in [Austin](location)?
+    - Do you have some suggestions on [Japanese](cuisine) restaurant in [London](location)?
+    - Can you search a [Chinese](cuisine) food in the [center of Austin](location)?
+
+- intent: searchCoffeeshop
+  examples: | 
+    - I am sleepy
+    - I am looking for some coffeeshops
+    - Can you recommend me a coffeeshop?
+    - I want to find a coffeeshop in [Austin](location)
+    - Do you have any recommendations for a coffeshop in [London](location)
+    - Can you find some coffeeshops [nearby](location)
+
+- intent: searchBar
+  examples: |
+    - Where can I grab a drink?
+    - I want to grab a drink for [tonight](time)?
+    - Is there anyplaces for a drink?
+    - I want to find a bar in [Shanghai](location) for [party of five](parties)
+    - Where is the [closest](location) bar for me?
+
+- intent: searchOutdoorActs
+  examples: |
+    - Can you find me the [nearest](location) [theatre](outdooracts)?
+    - I want to find out the [earliest](time) [movie](outdooracts) in [Austin](location)
+    - Where can I go [hiking](outdooracts)
+    - Can you recommend me a place for [skiing](outdooracts) in [California](location)
+    - Can you suggest a [museum](outdooracts) for me and my friend this [weekend](day)
+    - Is there any places for [camping](outdooracts) in [Austin](location) during [summer](season)?
+    - I'd like to go [picnic](outdooracts) in [spring](season)
+
+- intent: cuisine_info
+  examples: |
+    - [American](cuisine)
+    - [Japanese](cuisine)
+    - [Chinese](cuisine)
+    - [Korean](cuisine)
+    - [Indian](cuisine)
+    - [Mexican](cuisine)
+    - [Thai](cuisine)
+    - [Malaysia](cuisine)
+    - [Cantonese](cuisine)
+    - [Shanghainese](cuisine)
+
+- intent: location_info
+  examples: |
+    - [Austin](location)
+    - [Houston](location)
+    - [New York](location)
+    - [Los Angeles](location)
+    - [Chicago](location)
+    - [London](location)
+    - [Tokyo](location)
+
+- intent: time_info
+  examples: |
+    - [morning](time)
+    - [afternoon](time)
+    - [evening](time)
+    - [am](time)
+    - [pm](time)
+
+- intent: day_info
+  examples: |
+    - [weekend](day)
+    - [weekday](day)
+    - [Monday](day)
+    - [Tuesday](day)
+    - [Wednesday](day)
+    - [Thursday](day)
+    - [Friday](day)
+    - [Saturday](day)
+    - [Sunday](day)
+
+- intent: month_info
+  examples: |
+    - [jan](month)
+    - [janurary](month)
+    - [feb](month)
+    - [february](month)
+    - [mar](month)
+    - [march](month)
+    - [apr](month)
+    - [april](month)
+    - [may](month)
+    - [june](month)
+    - [july](month)
+    - [aug](month)
+    - [august](month)
+    - [sep](month)
+    - [september](month)
+    - [oct](month)
+    - [october](month)
+    - [nov](month)
+    - [november](month)
+    - [dec](month)
+    - [december](month)
+
+- intent: season_info
+  examples: |
+    - [spring](season)
+    - [summer](season)
+    - [fall](season)
+    - [autumn](season)
+    - [winter](season
+
+- intent: parties_info
+  examples: | 
+    - [people](parties)
+    - [parties of](parties)
+
+- intent: outdoor_acts_info
+  examples: |
+    - [movie](outdooracts)
+    - [theatre](outdooracts)
+    - [hiking](outdooracts)
+    - [skiing](outdooracts)
+    - [camping](outdooracts)
+    - [art fair](outdooracts)
+    - [museum](outdooracts)
+    - [zoo](outdooracts)
+    - [park](outdooracts)
+    - [beach](outdooracts)
+    - [sea](outdooracts)
+    - [canoe](outdooracts)
+    - [kayak](outdooracts)
+    - [picnic](outdooracts)
+
+
+- regex: number
+  examples: |
+    - \d{0, 24}
