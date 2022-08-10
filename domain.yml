@@ -1,0 +1,77 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - searchRestaurant
+  - searchCoffeeshop
+  - searchBar
+  - searchOutdoorActs
+  - cuisine_info
+  - location_info
+  - time_info
+  - day_info
+  - month_info
+  - season_info
+  - parties_info
+  - outdoor_acts_info
+
+entities:
+  - cuisine
+  - location
+  - time
+  - day
+  - month
+  - season
+  - parties
+  - outdooracts
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_location:
+  - text: "Which location do you want?"
+
+  utter_find_cuisine:
+  - text: "What kind of cuisine do you prefer?"
+
+  utter_search_restaurant:
+  - text: "Let me find some restaurants for you"
+  
+  utter_search_coffeeshop:
+  - text: "Let me find some coffeeshops for you"
+  
+  utter_search_bar:
+  - text: "Let me find some bars for you"
+  
+  utter_ask_outdooracts_types:
+  - text: "What kind of outdoor activities do you prefer?"
+  
+  utter_search_outdooracts:
+  - text: "Let me find them for you"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
